@@ -1,6 +1,10 @@
 # MLH GHW 2025 - Code Projects
 
-Welcome to the MLH GHW 2025 Codes repository! This collection contains various projects built during GitHub World Week (November 2025), showcasing different technologies and concepts including APIs, authentication, vector search, and more.
+Welcome to the **MLH GHW 2025 Codes** repository! 
+
+This collection contains various projects built during [Global Hack Week](https://ghw.mlh.io/) (November 2025), organized by [Major League Hacking (MLH)](https://mlh.io/).
+
+These projects showcase different technologies and concepts learned and implemented during the hackathon, including RESTful APIs, Authentication (Auth0), Vector Search, Cloudflare Workers, and more.
 
 ## 📚 Projects Overview
 
@@ -76,39 +80,24 @@ MongoDB and Node.js basic integration examples.
 
 ---
 
-### 6. **Xeeshan85** 👤
+### 6. **MCP MLH** 👤
 Personal portfolio/profile directory.
 
 **📖 Documentation:** [Xeeshan85/README.md](./Xeeshan85/README.md)
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 16+ (for Node projects)
-- Python 3.9+ (for Python projects)
-- Git
-
 ### Quick Setup
 
 ```bash
 # Clone and navigate
 git clone https://github.com/Xeeshan85/MLH-GHW-2025.git
-cd Codes
 
 # Install dependencies for your project
 cd <project-folder>
 npm install      # for Node projects
 # OR
 pip install -r requirements.txt  # for Python projects
-
-# Configure .env (see project-specific README)
-cp .env.example .env
-
-# Run the project
-npm start        # for Node
-python server.py # for Python
 ```
 
 ---
@@ -128,34 +117,6 @@ python server.py # for Python
 
 ---
 
-## 🏗️ Project Structure
-
-```
-Codes/
-├── student-grade-api/        # RESTful API for student grades
-│   └── README.md            # Full documentation
-│
-├── auth0/                    # Auth0 Flask integration
-│   ├── README.md
-│   ├── SETUP_GUIDE.md
-│   └── QUICKSTART.md
-│
-├── vector-search/           # MongoDB Vector Search
-│   └── README.md or examples
-│
-├── postcard/                # Image generation API
-│   └── image-generation-api/
-│       └── README.md
-│
-├── mongo/                   # MongoDB examples
-│   └── Examples and scripts
-│
-├── Xeeshan85/               # Profile
-│   └── README.md
-│
-├── .gitignore              # Comprehensive git rules
-└── README.md               # This file
-```
 
 ---
 
@@ -167,36 +128,10 @@ Codes/
 - **Cloud:** Cloudflare Workers, Render, MongoDB Atlas
 - **Languages:** JavaScript, TypeScript, Python
 
----
-
-## 🧪 Testing Projects
-
-See individual project READMEs for:
-- API endpoint examples
-- Testing with cURL or Postman
-- Integration tests
-- Deployment instructions
 
 ---
 
-## 🔒 Security
 
-⚠️ **Important:**
-- Never commit `.env` files (see `.gitignore`)
-- Keep secrets in environment variables only
-- Use HTTPS in production
-- See individual project docs for security best practices
-
----
-
-## � Support & Resources
-
-For detailed information, setup instructions, and troubleshooting:
-1. **Check the project's individual README.md**
-2. **Review the project's documentation folder**
-3. **See project-specific setup guides**
-
----
 
 ## 📄 License
 
