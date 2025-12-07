@@ -61,7 +61,7 @@ Image generation API built with Cloudflare Workers.
 
 **Quick Info:** TypeScript + Cloudflare Workers  
 **Status:** ✅ Functional  
-**📖 Full Documentation:** [postcard/README.md](./postcard/README.md)
+**📖 Full Documentation:** [postcard/README.md](./postcard/image-generation-api/README.md)
 
 ```bash
 cd postcard/image-generation-api
