@@ -71,7 +71,23 @@ wrangler deploy
 
 ---
 
-### 5. **mongo** 🗄️
+### 5. **ragbot** 🤖
+Knowledge assistant with fine-grained authorization using Auth0 FGA.
+
+**Quick Info:** Python + Auth0 FGA + ChromaDB + RAG  
+**Status:** ✅ Complete  
+**📖 Full Documentation:** [ragbot/README.md](./ragbot/README.md)
+
+```bash
+cd ragbot
+pip install -r requirements.txt
+python -m tools.setup_fga
+python -m app.main --tenant U1 --query "Your question here"
+```
+
+---
+
+### 6. **mongo** 🗄️
 MongoDB and Node.js basic integration examples.
 
 **Quick Info:** Node.js + Python + MongoDB  
@@ -80,7 +96,7 @@ MongoDB and Node.js basic integration examples.
 
 ---
 
-### 6. **MCP MLH** 👤
+### 7. **MCP MLH** 👤
 Personal portfolio/profile directory.
 
 **📖 Documentation:** [Xeeshan85/README.md](./Xeeshan85/README.md)
@@ -110,6 +126,7 @@ pip install -r requirements.txt  # for Python projects
 | auth0 | [README.md](./auth0/README.md) | [SETUP_GUIDE.md](./auth0/SETUP_GUIDE.md) | Python, Flask, Auth0 |
 | vector-search | [README.md](./vector-search) | [README.md](./vector-search) | Python, MongoDB, Vector Search |
 | postcard | [README.md](./postcard/README.md) | [README.md](./postcard/image-generation-api) | TypeScript, Cloudflare Workers |
+| ragbot | [README.md](./ragbot/README.md) | See main README | Python, Auth0 FGA, ChromaDB |
 | mongo | [Examples](./mongo) | N/A | Node.js, Python, MongoDB |
 | Xeeshan85 | [README.md](./Xeeshan85/README.md) | N/A | Profile |
 
@@ -123,8 +140,9 @@ pip install -r requirements.txt  # for Python projects
 ## 🔑 Key Technologies
 
 - **Backend:** Node.js, Express, Python, Flask
-- **Databases:** MongoDB Atlas, Vector Search
-- **Authentication:** Auth0, JWT, bcrypt
+- **Databases:** MongoDB Atlas, Vector Search, ChromaDB
+- **Authentication:** Auth0, Auth0 FGA, JWT, bcrypt
+- **AI/ML:** RAG, Sentence Transformers, Groq LLM
 - **Cloud:** Cloudflare Workers, Render, MongoDB Atlas
 - **Languages:** JavaScript, TypeScript, Python
 
@@ -147,7 +165,7 @@ This project is licensed under the ISC License - see the [LICENSE](../LICENSE) f
 
 ---
 
-**Last Updated:** December 6, 2025  
-**Version:** 1.0.0  
+**Last Updated:** December 11, 2025  
+**Version:** 1.1.0  
 **Status:** Complete ✅
 

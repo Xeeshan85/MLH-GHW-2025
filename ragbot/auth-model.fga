@@ -1,0 +1,14 @@
+model
+  schema 1.1
+
+type user
+
+type department
+  relations
+    define member: [user]
+
+type document
+  relations
+    define owner: [user]
+    define parent_department: [department]
+    define viewer: [user] or owner or member from parent_department
