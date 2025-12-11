@@ -62,7 +62,11 @@ python -m tools.setup_fga
 ### 4. Run the Application
 
 ```bash
-python -m app.main --tenant U1 --query "What PPE is required in wet labs?"
+# With FGA authorization (user-based access control)
+python -m app.main --user alice --query "What is the salary information?"
+
+# With tenant-specific document retrieval
+python -m app.main --user alice --tenant U1 --query "What PPE is required in wet labs?"
 ```
 
 ### 5. Run Tests

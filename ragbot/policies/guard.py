@@ -23,7 +23,8 @@ class DocumentGuard:
         
         allowed_docs = []
         for doc in documents:
-            doc_id = doc.get("id") or doc.get("document_id") or doc.get("filename", "").replace(".md", "")
+            # Extract doc_id from various possible keys
+            doc_id = doc.get("doc_id") or doc.get("id") or doc.get("document_id") or doc.get("filename", "").replace(".md", "")
             
             # Check FGA permission
             has_access = await self.fga_client.check_access(user_id, doc_id)
@@ -31,7 +32,10 @@ class DocumentGuard:
             if has_access:
                 allowed_docs.append(doc)
             else:
-                print(f"[GUARD] Access DENIED for user:{user_id} to document:{doc_id}")
+                print(f"[FGA] Access DENIED: user:{user_id} → document:{doc_id}")
+        
+        if allowed_docs:
+            print(f"[FGA] Access GRANTED: user:{user_id} → {len(allowed_docs)} documents")
         
         return allowed_docs
 
